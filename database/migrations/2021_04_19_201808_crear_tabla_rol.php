@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CrearTablaPermiso extends Migration
+class CrearTablaRol extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CrearTablaPermiso extends Migration
      */
     public function up()
     {
-        Schema::create('permiso', function (Blueprint $table) {
-            $table->id('id');
-            $table->string('Nombre', 50);
-            $table->string('Slug', 50);
+        Schema::create('rol', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre', 50);
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CrearTablaPermiso extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('permiso');
+        Schema::dropIfExists('rol');
     }
 }
