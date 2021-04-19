@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use PhpParser\Node\Stmt\Foreach_;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,7 +13,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->truncateTablas([
-            'rol'
+            'rol',
         ]);
         $this->call(TablaRolSeeder::class);
     }
