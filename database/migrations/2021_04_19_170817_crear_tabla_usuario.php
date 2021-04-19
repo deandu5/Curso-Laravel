@@ -14,7 +14,10 @@ class CrearTablaUsuario extends Migration
     public function up()
     {
         Schema::create('usuario', function (Blueprint $table) {
-            $table->id();
+            $table->id('id');
+            $table->sting('usuario', 50);
+            $table->string('password', 100);
+            $table->sting('Nombre', 50);
             $table->timestamps();
         });
     }
