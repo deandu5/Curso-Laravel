@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use PhpParser\Node\Stmt\Foreach_;
 use Prophecy\Call\Call;
 
 class DatabaseSeeder extends Seeder
@@ -23,7 +22,7 @@ class DatabaseSeeder extends Seeder
     protected function truncateTablas(array $tablas)
     {
             DB::statement('SET FOREIGN_KEY_CHECKS = 0;');
-        foreach ($tablas as $tabla){
+        foreach($tablas as $tabla){
             DB::table($tabla)->truncate();
         }
             DB::statement('SET FOREIGN_KEY_CHECKS = 1;');
