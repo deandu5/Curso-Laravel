@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use PhpParser\Node\Stmt\Foreach_;
+use Prophecy\Call\Call;
 
 class DatabaseSeeder extends Seeder
 {
