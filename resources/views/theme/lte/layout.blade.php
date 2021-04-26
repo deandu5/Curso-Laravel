@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="{{asset("assets/$theme/plugins/fontawesome-free/css/all.min.css")}}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset("assets/$theme/dist/css/adminlte.min.css")}}">
+
+  <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
   <!-- Bootstrap 4 -->
   <script src="{{asset("assets/$theme/plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
   <!-- AdminLTE App -->
