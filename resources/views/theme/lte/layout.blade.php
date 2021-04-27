@@ -17,6 +17,9 @@
   <script src="{{asset("assets/$theme/plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
   <!-- AdminLTE App -->
   <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
+  <script src="{{asset("assets/js/jquery-validation/jquery.validate.min.js")}}"></script>
+  <script src="{{asset("assets/js/jquery-validation/localization/messages_es.min.js")}}"></script>
+  <script src="{{asset("assets/js/funciones.js")}}"></script>
   @yield('Estilos')
   @yield('Scripts')
 </head>
@@ -38,7 +41,7 @@
              @yield('Contenido')            
             </div>
               <!-- /.card -->         
-            </section>
+            </section> 
         </div>
         <!-- Inicio Footer -->
         @include("theme/$theme/footer")
